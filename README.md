@@ -11,19 +11,21 @@
 An autonomous robotic boat designed to detect and collect floating plastic waste from ponds and lakes. The system uses an ESP32-CAM with Edge Impulse-based image classification to distinguish plastic waste from non-plastic objects and an Arduino UNO for motor control and navigation.
 
 
+
 ## System Architecture
 
 ### 1. System Block Diagram
 
 The block diagram illustrates the overall architecture of the robotic boat, including the ESP32-CAM, Arduino UNO, ultrasonic sensor, motor drivers, propulsion motors and waste collection mechanism.
 
-![System Block Diagram](diagrams/system-block-diagram.png)
+![System Block Diagram](system-block-diagram.png.jpeg)
 
 ### 2. System Flowchart
 
 The flowchart represents the operational sequence of the robotic boat, including system initialization, plastic detection, waste collection, obstacle detection and autonomous navigation.
 
-![System Flowchart](diagrams/project-flowchart.png)
+![System Flowchart](project-flowchart.png.jpeg)
+
 
 
 ## Objectives
