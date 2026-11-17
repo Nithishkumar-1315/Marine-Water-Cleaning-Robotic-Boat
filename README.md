@@ -3,7 +3,7 @@
 
 ## Project Prototype
 
-![Marine Water Cleaning Robotic Boat](images/robotic-boat.jpg)
+![Marine Water Cleaning Robotic Boat](robotic-boat.jpg.jpeg)
 
 *Prototype of an autonomous robotic boat designed for floating plastic waste collection in ponds and lakes.*
 
