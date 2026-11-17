@@ -8,8 +8,7 @@
 *Prototype of an autonomous robotic boat designed for floating plastic waste collection in ponds and lakes.*
 
 ## Project Overview
-An autonomous robotic boat designed to detect and collect floating plastic waste from ponds and lakes. The system uses an ESP32-CAM with Edge Impulse-based image classification to distinguish plastic waste from non-plastic objects and an Arduino UNO for motor control and navigation.
-
+The Marine Plastic Collecting Robotic Boat is an autonomous water-cleaning system designed to identify and collect floating plastic waste from ponds and lakes. The system integrates an ESP32-CAM (OV3660) with an Edge Impulse machine learning model for plastic and non-plastic classification. An Arduino UNO controls boat navigation, ultrasonic-based obstacle detection, and a motor-driven conveyor mechanism that collects detected plastic waste into an onboard storage bin. The project combines embedded systems, machine learning, robotics, and automation to support sustainable water-body cleaning.
 
 
 ## System Architecture
@@ -29,22 +28,26 @@ The flowchart represents the operational sequence of the robotic boat, including
 
 
 ## Objectives
-- Automate the collection of floating plastic waste.
-- Identify plastic and non-plastic objects using image classification.
-- Avoid obstacles using an ultrasonic sensor.
+
+- Develop an autonomous robotic boat for collecting floating plastic waste.
+- Implement plastic and non-plastic classification using ESP32-CAM and Edge Impulse.
+- Automate waste collection using a motor-driven conveyor mechanism.
+- Integrate ultrasonic sensing for obstacle detection and collision avoidance.
+- Enable coordinated navigation and waste collection using Arduino UNO.
 - Reduce manual effort in cleaning small water bodies.
 
+  
 ## Hardware Components
-- Arduino UNO
-- ESP32-CAM with OV3660 camera
-- HC-SR04 Ultrasonic Sensor
-- L298N Motor Driver
-- L293D Motor Driver
-- DC Propulsion Motors
-- Conveyor Motor
-- Waste Collection Container
-- Battery and Power Supply
-
+Arduino UNO	
+ESP32-CAM OV3660	
+HC-SR04	
+RS365 
+Single-shaft BO motor	
+L298N	
+Single relay module	
+Li-ion batteries
+Buck converter	
+Storage bin
   
 ## Project Outcomes
 
@@ -75,13 +78,14 @@ The flowchart represents the operational sequence of the robotic boat, including
 - ESP32-CAM
 
 ## Working Principle
+
 1. The ESP32-CAM captures images of floating objects.
-2. Edge Impulse is used for plastic and non-plastic classification.
-3. Plastic objects are identified for collection.
-4. Non-plastic objects are ignored.
-5. The Arduino UNO controls the conveyor and propulsion motors.
-6. The ultrasonic sensor detects obstacles and supports collision avoidance.
-7. Collected waste is stored in an onboard container.
+2. The Edge Impulse model classifies the objects as plastic or non-plastic.
+3. When plastic is identified, a detection signal is sent to the Arduino UNO.
+4. The Arduino activates the conveyor motor to collect plastic waste into the storage bin.
+5. The HC-SR04 ultrasonic sensor detects obstacles in the boat's path.
+6. Based on the sensor readings, the Arduino controls the propulsion motors to change direction and avoid obstacles.
+7. The boat continues navigating the water surface to search for additional floating plastic waste.
 
 ## Project Structure
 - Arduino_UNO.ino - Motor control and navigation template.
