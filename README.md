@@ -1,6 +1,12 @@
 
 # Marine Water Cleaning Robotic Boat
 
+## Project Prototype
+
+![Marine Water Cleaning Robotic Boat](images/robotic-boat.jpg)
+
+*Prototype of an autonomous robotic boat designed for floating plastic waste collection in ponds and lakes.*
+
 ## Project Overview
 An autonomous robotic boat designed to detect and collect floating plastic waste from ponds and lakes. The system uses an ESP32-CAM with Edge Impulse-based image classification to distinguish plastic waste from non-plastic objects and an Arduino UNO for motor control and navigation.
 
