@@ -45,6 +45,28 @@ The flowchart represents the operational sequence of the robotic boat, including
 - Waste Collection Container
 - Battery and Power Supply
 
+  
+## Project Outcomes
+
+- Developed a robotic boat prototype for floating plastic waste collection.
+- Integrated camera-based plastic and non-plastic classification.
+- Implemented ultrasonic-based obstacle detection.
+- Designed an automated conveyor-based waste collection mechanism.
+- Demonstrated the application of embedded systems and robotics for environmental cleaning.
+
+
+## Skills Demonstrated
+
+- Embedded C/C++
+- Arduino Programming
+- ESP32-CAM Interfacing
+- Edge Impulse
+- Image Classification
+- Sensor Interfacing
+- Motor Driver Integration
+- Robotics and Automation
+
+
 ## Software and Technologies
 - Arduino IDE
 - Embedded C/C++
